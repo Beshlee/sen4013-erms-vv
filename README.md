@@ -28,7 +28,7 @@ assistance, in [Beshlee/erms-backend](https://github.com/Beshlee/erms-backend). 
 keeps that git history. The **27 unit tests** dated August 2026 existed before this course
 project; we use them as the regression baseline and extend them.
 
-**Baseline coverage** (Application layer, 27 existing tests): ≈35% line, ≈31% branch.
+**Baseline coverage** (Application layer, 27 existing tests): ≈35% line, ≈30% branch.
 `AttachmentService`, `UserService`, `CommentService`, `DepartmentService` and
 `RequestTypeService` had no tests.
 
