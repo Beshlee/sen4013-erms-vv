@@ -21,3 +21,8 @@ src/ERMS.Api/App_Data/
 ## OS
 .DS_Store
 Thumbs.db
+
+# Coverage / test output (CI + local)
+coverage/
+coverage-report/
+TestResults/
