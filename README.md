@@ -37,9 +37,9 @@ project; we use them as the regression baseline and extend them.
 | Member | Testing approach | Main target |
 |---|---|---|
 | Kaan | Structural testing + regression | Test infrastructure, baseline analysis, before/after coverage |
-| Nilsu | State transition / model-based | `RequestService` — Draft → Pending → Approved / Rejected / Cancelled |
+| Hasan | State transition / model-based | `RequestService` — Draft → Pending → Approved / Rejected / Cancelled |
 | Ömer | Boundary value analysis + equivalence partitioning | `AttachmentService` upload rules, all validators |
-| Hasan | Decision table / combinatorial | Authorization: role × ownership × request status |
+| Nilsu | Decision table / combinatorial | Authorization: role × ownership × request status |
 
 ## Getting started
 
@@ -61,11 +61,11 @@ To run the API itself (SQL Server LocalDB or Docker), see
 
 - `main` is protected: every change goes through a pull request with **one approval** from
   another team member. No direct pushes, no force pushes.
-- Each member works on their own branch, e.g. `test/state-transition-nilsu`, and in their
+- Each member works on their own branch, e.g. `test/state-transition-hasan`, and in their
   own test files. Shared test helpers are changed only by Kaan.
 - Test names follow `Method_Condition_ExpectedResult` with Arrange–Act–Assert.
 - Test IDs: `REG-xx` regression · `ST-xx` state transition · `BVA-xx` boundary value ·
-  `DT-xx` decision table. Every test case is also logged in the team's shared test case table.
+  `DT-xx` decision table. Every test case is also logged in the team's Google Sheets test tracker.
 - A bug found by a test is logged as an incident (`INC-xx`) and fixed in its own pull request,
   titled `fix: INC-xx …`.
 - [CI](.github/workflows/ci.yml) builds the API, runs the tests and publishes a coverage
