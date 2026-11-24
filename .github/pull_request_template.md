@@ -15,7 +15,7 @@
 
 ## Kontrol listesi
 
-- [ ] Test case'ler ortak Excel tablosuna eklendi (ID, girdi, beklenen, gerçekleşen)
+- [ ] Test case'ler Google Sheets test takip tablosuna (SEN4013 Test Tracking) eklendi (ID, girdi, beklenen, gerçekleşen)
 - [ ] Bulunan hatalar incident log'a yazıldı
 - [ ] CI yeşil; eski testler bozulmadı
 - [ ] Sadece kendi test dosyalarımı değiştirdim (ortak helper değişikliği → Kaan)
